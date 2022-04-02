@@ -20,7 +20,7 @@ public class exercicio02 {
         double nota2 = leitorTeclado.nextInt();
         double media = (nota1 + nota2) / 2;
 
-        if (media >= 6) System.out.println("Aluno aprovado com média: " + media);
-        else System.out.println("Aluno reprovado com média: " + media);
+        if (media >= 6) System.out.printf("Aluno %s aprovado com média: %.1f ", nomeAluno, media);
+        else System.out.printf("Aluno %s reprovado com média: %.1f", nomeAluno, media);
     }
 }
