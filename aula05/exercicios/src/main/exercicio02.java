@@ -1,9 +1,5 @@
 package main;
 
-/* Faça um programa para receber o nome de um aluno e informar 2 notas, em seguida calcular
-a média do aluno e apresentar ao final a média calculada e a situação de Aprovação do aluno.
-(aprovado com média >= 6).*/
-
 import java.util.Scanner;
 
 public class exercicio02 {
