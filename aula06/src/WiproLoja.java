@@ -27,11 +27,11 @@ public class WiproLoja {
         double[] precoProdutoCarrinho = new double[10];
         double[] precoTotalProdutoCarrinho = new double[10];
 
-        String opcaoCliente = "s";
-        int itemDesejado = 0, quantidadeItem = 0, contadorItens = 0, formaPagamento;
+        String opcaoCliente;
+        int itemDesejado, quantidadeItem, contadorItens = 0, formaPagamento;
         double somaTotal = 0d, desconto = 0d;
 
-        while (continuaCompra != false) {
+        while (continuaCompra) {
             System.out.println("\n\t============ Bem vindo a Loja Wipro ============\n");
 
             for (int i = 0; i < nomeProduto.length; i++) {
@@ -112,10 +112,9 @@ public class WiproLoja {
             System.out.println("Por favor digite uma opção válida para o menu! (S/N): ");
             opcaoCliente = leitorTeclado.nextLine();
         }
-        if (opcaoCliente.equals("n") || opcaoCliente.equals("N"))
+        if (opcaoCliente.equalsIgnoreCase("n"))
             continuaCompra = false;
-        else if (opcaoCliente.equals("s") || opcaoCliente.equals("S"))
-            continuaCompra = true;
+        else continuaCompra = true;
 
         return continuaCompra;
     }
