@@ -16,8 +16,28 @@ public class Aluno {
         this.notaTrabalho = notaTrabalho;
     }
 
+    public Integer getMatricula() {
+        return matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Double getNotaProva1() {
+        return notaProva1;
+    }
+
+    public Double getNotaProva2() {
+        return notaProva2;
+    }
+
+    public Double getNotaTrabalho() {
+        return notaTrabalho;
+    }
+
     public Double media(Double notaProva1, Double notaProva2, Double notaTrabalho) {
-        return (notaProva1 * 1.5) * (notaProva2 * 1.5) * (notaTrabalho * 2) / 3;
+        return (notaProva1 * 1.5) + (notaProva2 * 1.5) + (notaTrabalho * 2) / (1.5 + 1.5 + 2);
     }
 
     public Integer recuperacao() {
